@@ -1,16 +1,16 @@
 // Is this creating a new variable or reassigning an existing variable?
-let appleStorage = 10;    // Instruction A
+let appleStorage = 10;    // Creating a new variable
 
 function EatApples()
 {
   // Is this creating a new variable or reassigning an existing variable?
-  appleStorage = 0;       // Instruction B
+  appleStorage = 0;       // reassigning an exsisting variable
 }
 
 function BuyApples()
 {
   // Is this creating a new variable or reassigning an existing variable?
-  let appleStorage = 20;  // Instruction C
+  appleStorage = 20;  // creating a new variable
 }
 
 console.log("You have " + appleStorage + " apples.");
@@ -22,6 +22,7 @@ console.log("You have " + appleStorage + " apples.");
 BuyApples();
 
 // Why does this say we have 0 apples when we should have 20?
+// Because you already have a variable with the name
 console.log("You have " + appleStorage + " apples.");
 
 // 1) Modify either the A, B, or C instruction in place to change the
